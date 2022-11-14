@@ -24,7 +24,7 @@ import EditPost from "./components/EditPost"
 import NotFound from "./components/NotFound"
 const Search = React.lazy(() => import("./components/Search"))
 const Chat = React.lazy(() => import("./components/Chat"))
-import LoadingDotsIcon from "./components/loadingDotsIcon"
+import LoadingDotsIcon from "./components/LoadingDotsIcon"
 function Main() {
   const initialState = {
     loggedIn: Boolean(localStorage.getItem("complexappToken")),

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react"
 import Axios from "axios"
-import { useParams,Link } from "react-router-dom"
-import LoadingDotsIcon from "./loadingDotsIcon"
+import { useParams, Link } from "react-router-dom"
+import LoadingDotsIcon from "./LoadingDotsIcon"
 import StateContext from "../StateContext"
 import Post from "./Post"
 
@@ -34,7 +34,7 @@ function ProfilePost() {
   return (
     <div className="list-group">
       {posts.length > 0 &&
-        posts.map(post => {
+        posts.map((post) => {
           return <Post noAuthor={true} post={post} key={post._id} />
         })}
       {posts.length == 0 && appState.user.username == username && (
